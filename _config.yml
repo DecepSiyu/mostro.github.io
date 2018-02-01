@@ -81,3 +81,8 @@ deploy:
   repository: git@github.com:Mostro-Complexity/Mostro-Complexity.github.io.git
   branch: master
 
+# hexo-admin authentification
+admin:
+  username: mostro
+  password_hash: $2a$10$408dK67dZgkT52RLIutYyezrZOYcOudbJRdrlAiBBigC4DS3kR/6y
+  secret: zt
