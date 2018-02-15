@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+      
+        关于元胞自动机的一些猜想 |
+          
+            Complexity
+    </title>
+    <meta name="description" content="朝着温暖的方向前进" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400"
+    />
+
+    <meta name="generator" content="Complexity"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
+        
+            
+
+                
+  </head>
+
+<body class="post-template">
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="site-head"  style="background-image: url(
+    /image/cover2_4.png)"
+        >
+            <div class="vertical">
+                <div class="site-head-content inner">
+                    
+                        <a class="blog-logo" href="/">
+                            <img src="//blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png" alt="Blog Logo" />
+                        </a>
+                        
+                            <h1 class="blog-title">
+                                Complexity
+                            </h1>
+                            <h2 class="blog-description">
+                                朝着温暖的方向前进
+                            </h2>
+                </div>
+            </div>
+</header>
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2018-02-11T19:47:32.000Z" itemprop="datePublished">
+          2018-02-12
+      </time>
+    
+</span>
+    <h1 class="post-title">关于元胞自动机的一些猜想</h1>
+    <section class="post-content">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h2 id="前提与假设"><a href="#前提与假设" class="headerlink" title="前提与假设"></a>前提与假设</h2><p>我们已知达尔文进化论中，生物不断进化的两个必要条件为：  </p>
+<ul>
+<li>变异  </li>
+<li>自然选择  </li>
+</ul>
+<p>但是达尔文进化论并没有给出原始生命如何出现。关于原始生命如何出现，至今还是一个悬而未决的难题。<br>在此，我们假设，我们所生活的星球某时刻突然出现了原始生物细胞。这种细胞具有以下特点：  </p>
+<ul>
+<li>拥有有限的特征量（有限状态的向量机）</li>
+<li>可以进行自我复制</li>
+<li>具有趋利避害的本能</li>
+<li>自我复制时有一定几率产生变异</li>
+<li>不同细胞存在竞争关系</li>
+</ul>
+<p>这些原始细胞的生活环境具有一下特征：</p>
+<ul>
+<li>拥有有限的特征量（有限状态的向量机）</li>
+<li>处于动态的平衡</li>
+</ul>
+<p>在以上的条件下（可能有我所遗漏的），环境中原始细胞最终会消失，同时会不断产生新细胞类型，并且有可能出现一种细胞统治生存环境。  </p>
+<p>但在这种环境下不会诞生复杂系统。因此我们有理由相信，复杂系统本身在进化过程中具有优势（否则进化的结果就不会有复杂系统）。  </p>
+<p>典型的复杂系统就表现为简单多细胞生物，我们称这种复杂系统为：<strong>单一复杂系统</strong>。  </p>
+<p>但是显然简单多细胞生物也不是生物进化的最终形态，自然界会出现很多更为复杂的生命（复杂系统），诸如蜂群、蚁群。  </p>
+<p>同样，有理由相信：具有多个复杂系统嵌套的复杂系统具有更强的环境竞争力。而由<strong>单一复杂系统</strong>向<strong>嵌套复杂系统</strong>进化的过程中必然伴随着复杂系统内部元胞的分化。</p>
+<h2 id="复杂系统的内部进化"><a href="#复杂系统的内部进化" class="headerlink" title="复杂系统的内部进化"></a>复杂系统的内部进化</h2><p>细胞的进化是很简单的：在复制时一定几率的变异。<br>但是复杂系统的进化不是这样简单，但一定伴随着细胞的进化，同样在复制时产生。</p>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ul>
+<li>不同细胞彼此功能互补</li>
+<li>不同细胞可能存在细微差别</li>
+<li>内部分化存在一个递归的过程，即不断产生<strong>复杂子系统</strong></li>
+<li>不同细胞不存在竞争关系，但是存在凋亡机制</li>
+</ul>
+<h2 id="复杂系统的自我复制"><a href="#复杂系统的自我复制" class="headerlink" title="复杂系统的自我复制"></a>复杂系统的自我复制</h2><p>诸如动物的繁殖、庞大蚁群的分裂等等……<br>值得注意的是，复杂系统的复制本身也是也存在变异，也就是前面所讲的内部进化，如：动物的变异。</p>
+<h2 id="自然界演化过程的猜想"><a href="#自然界演化过程的猜想" class="headerlink" title="自然界演化过程的猜想"></a>自然界演化过程的猜想</h2><h3 id="超级细胞阶段"><a href="#超级细胞阶段" class="headerlink" title="超级细胞阶段"></a>超级细胞阶段</h3><p>在生命诞生初期，生命的存在形式应该表现为<strong>可以演化为任意细胞的超级细胞</strong>，但是仅有这种细胞的话，地球的生物是难以生存和维系的。</p>
+<h3 id="生态系统阶段"><a href="#生态系统阶段" class="headerlink" title="生态系统阶段"></a>生态系统阶段</h3><p>此阶段地球应具有简单的生态系统，包括生产者、消费者、分解者。他们维持着生态环境的动态稳定。</p>
+<h3 id="复杂生态系统阶段"><a href="#复杂生态系统阶段" class="headerlink" title="复杂生态系统阶段"></a>复杂生态系统阶段</h3><p>此阶段应是多个复杂系统嵌套相互作业且不断进化的阶段。</p>
+<h2 id="大胆的结论"><a href="#大胆的结论" class="headerlink" title="大胆的结论"></a>大胆的结论</h2><p>如果能用计算机模拟生物产生以来的过程（大量计算），是否最终可以进化出比人类优秀的生物？</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>Mostro</h4>
+    <p>如果您同样热爱计算机、计算科学和音乐，请多多关注。</p>
+</section>
+      <section class="share">
+    <h4>分享</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://yoursite.com/2018/02/12/关于元胞自动机的一些猜想/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/02/12/关于元胞自动机的一些猜想/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://yoursite.com/2018/02/12/关于元胞自动机的一些猜想/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2018/02/07/写一写过去的事情/">
+        写一写过去的事情 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">评论</a></h1>
+
+    
+</div>
+</main>
+
+
+  <footer class="site-footer">
+  
+      <div class="inner">
+        <section class="copyright">All content copyright
+          <a href="/">
+            Complexity
+          </a> &copy; 2014 &bull; All rights reserved.</section>
+        <section class="poweredby">Proudly published with
+          <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a>
+        </section>
+      </div>
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+
+
+
+</body>
+</html>
